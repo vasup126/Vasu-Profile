@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vasu Patel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background-color: #ffffff;
+      color: #000000;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #a2a9b1;
+      padding-bottom: 15px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+
+    .photo {
+      width: 150px;
+      height: 180px;
+      border: 1px solid #a2a9b1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    /* Navigation */
+    .nav {
+      display: flex;
+      gap: 30px;
+      border-bottom: 1px solid #a2a9b1;
+      padding: 10px 0;
+      margin-bottom: 25px;
+      font-size: 0.95em;
+    }
+
+    .nav a {
+      color: #0645ad;
+      text-decoration: none;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 30px;
+    }
+
+    section h2 {
+      font-size: 1.5em;
+      border-bottom: 1px solid #a2a9b1;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.85em;
+      color: #555;
+      border-top: 1px solid #a2a9b1;
+      padding-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+      }
+
+      .photo {
+        align-self: center;
+      }
+
+      .nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Name and Photo -->
+    <div class="header">
+      <div>
+        <h1>Vasu Patel</h1>
+        <p style="margin: 4px 0; font-size: 0.95em;">
+          <a href="mailto:vasup126@outlook.com" title="Send Email">
+            ✉️ vasup126@outlook.com
+          </a>
+          &nbsp;|&nbsp;
+          <a href="tel:+17657710543" title="Call Phone">
+            📞 +1 (765) 771-0543
+          </a>
+        </p>
+      </div>
+    
+      <div class="photo">
+        <img src="images/vasu_profile.jpg" alt="Vasu Patel" style="width: 100%; height: 100%; object-fit: cover; border-radius: 5px;">
+      </div>
+    </div>    
+
+    <!-- Navigation Links -->
+    <nav class="nav">
+      <a href="#" onclick="showHome()">Home</a>
+      <a href="https://www.linkedin.com/in/vasup126/" target="_blank" rel="noopener noreferrer">
+        LinkedIn
+      </a>
+      <a href="#" onclick="showResume()">Resume</a>
+      <a href="#" onclick="showPortfolio()">Portfolio</a>
+    </nav>  
+  </div>  
+
+    <div class="container" id="main-content">
+    <div id="home-content">
+    <!-- Personal Info -->
+    <section id="personal-info">
+      <h2>Personal Information</h2>
+      <p>
+        Vasu Patel is a mechanical and manufacturing engineer with experience in automated manufacturing, casting and machining operations, and production efficiency improvement. He is currently working as a Manufacturing Engineer at A&B Foundry, Machining and Fabrication. His work focuses on process improvement, mechanical design, prototyping, and the use of data to support manufacturing decisions. He is based in the United States.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+    
+      <p>
+        <strong>Master of Science in Mechanical Engineering</strong><br>
+        <em>Purdue University – Main Campus, West Lafayette, IN</em><br>
+        CGPA: <strong>3.8 / 4.0</strong>
+      </p>
+    
+      <p>
+        <strong>Relevant coursework:</strong><br>
+        Analysis of Thermal Systems · Fundamentals of Wind Energy · Hybrid Electric Vehicles · Combustion · Vehicle Dynamics · Mechatronics · Control Engineering · Design of Experiments · Project Management · Strategic Management · Intellectual Property for Engineers
+      </p>
+    
+      <p>
+        <strong>Bachelor of Engineering in Mechanical Engineering</strong><br>
+        <em>Gujarat Technological University, Ahmedabad, Gujarat, India</em><br>
+        CGPA: <strong>9.1 / 10.0</strong>
+      </p>
+    
+      <p>
+        <strong>Relevant coursework:</strong><br>
+        Manufacturing Technology · Machine Design · Strength of Materials · Fluid Mechanics · Heat Transfer · Engineering Materials
+      </p>
+    </section>    
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2>Experience</h2>
+    
+      <!-- A&B Foundry -->
+      <p><strong>Manufacturing Engineer</strong> – A&B Foundry, Machining & Fabrication, Dayton, OH<br>
+      <em>December 2024 – Present</em></p>
+      <p>
+    At A&B Foundry, Vasu Patel works at the intersection of foundry and machining operations, focusing on improving product quality and production efficiency. By refining molding and pouring parameters through Quick-Cast solidification modeling and training technicians on these optimized processes, quality issues were reduced by 60%. He managed pilot runs for over 50 new casting products, achieving an 85% first-pass yield, and developed detailed SOPs to improve consistency and reduce process variability by 10%. Additionally, he designed and produced prototypes and custom fixtures using CAD and 3D printing, which reduced setup time by 40% and improved equipment utilization from 78% to 85%, while implementing scrap reduction initiatives that saved $75K and minimized material waste. He also reverse-engineered legacy aerospace components, modernizing products with 99% dimensional accuracy and ensuring full compliance with customer quality standards.
+      </p>
+    
+      <!-- Automation System and Design -->
+      <p><strong>Mechanical Design Engineer</strong> – Automation System and Design (ASD), Dayton, OH<br>
+      <em>July 2024 – August 2024</em></p>
+      <p>
+    At ASD, Vasu Patel focused on designing automation systems and auxiliary equipment for part marking stations and cell infrastructure. He created 3D models and detailed technical drawings for 15 pieces of equipment, optimizing layouts to reduce the number of machines required and increase overall system efficiency. By leading engineering team meetings, he encouraged collaboration and innovation, helping the team overcome design challenges while delivering projects within tight deadlines.
+      </p>
+    
+      <!-- Controls Teaching Assistant -->
+      <p><strong>Controls Engineering Teaching Assistant</strong> – Purdue University, West Lafayette, IN<br>
+      <em>January 2024 – May 2024</em></p>
+      <p>
+    As a Teaching Assistant for Controls Engineering, Vasu Patel guided 50+ students through laboratory sessions, helping them understand PLC diagnostics, LabVIEW, and MATLAB/SIMULINK applications. He supported student teams in building line-follower robots, which earned 5th place in the end-of-semester class competition, and provided individualized mentoring to ensure comprehension of complex control systems and feedback loop applications.
+      </p>
+    
+      <!-- Tesla -->
+      <p><strong>Manufacturing Engineer</strong> – Tesla GFTX, Austin, TX<br>
+      <em>May 2023 – December 2023</em></p>
+      <p>
+    At Tesla, Vasu Patel led eight cross-functional manufacturing projects valued at $350K, increasing process efficiency by 30% through automation upgrades and optimized equipment use. He designed and fabricated prototype models for casting equipment upgrades, reducing new equipment costs by $100K, and improved part procurement and production processes using data analysis tools, boosting efficiency by 5–6%. He also conducted dimensional analysis and experimental adjustments for Cybertruck castings, providing actionable recommendations that enhanced product quality and reduced variation in critical dimensions.
+      </p>
+    
+      <!-- Landmark Honda -->
+      <p><strong>Mechanical Engineering Intern</strong> – Landmark Honda, Surat, Gujarat, India<br>
+      <em>November 2021 – April 2022</em></p>
+      <p>
+    During his internship at Landmark Honda, Vasu Patel developed macros and pivot tables that improved the efficiency of new part procurement by 8–10%. He led engine troubleshooting and remake projects, cutting process time by 40%, and facilitated team brainstorming sessions that introduced innovative solutions to engineering challenges, improving overall service quality and operational performance.
+      </p>
+    </section>          
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+    
+      <!-- Technical Skills -->
+      <p><strong>Technical Skills:</strong> Mechanical Design, Manufacturing Process Optimization, Prototyping, Casting & Machining, Automation Systems, Product Design, Vehicle Dynamics, Thermal Systems Analysis, Mechatronics, Design of Experiments (DOE), Failure Modes and Effects Analysis (FMEA), GD&T (Geometric Dimensioning & Tolerancing), 3D Printing, Acoustics & Vibration Analysis (NVH), Hybrid & Electric Vehicle Systems</p>
+    
+      <!-- Software & Tools -->
+      <p><strong>Software & Tools:</strong> SolidWorks, AutoCAD, Fusion 360, Rhino 3D, MATLAB, LabVIEW, Quick-Cast, Microsoft Project, Microsoft Excel (Macros & Pivot Tables), Data Analysis & Visualization, CFD / Simulation Tools</p>
+    
+      <!-- Professional / Soft Skills -->
+      <p><strong>Professional Skills:</strong> Project Management, Cross-Functional Collaboration, Team Leadership, Critical Thinking, Workflow Optimization, Process Improvement, Problem Solving, Creativity, Adaptability, Attention to Detail, Communication</p>
+    </section>    
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+    
+      <!-- Go-Kart Chassis Design -->
+      <p><strong>High-Performance Go-Kart Chassis Design</strong> – Feb 2024 – Apr 2024</p>
+      <p>
+    Vasu Patel designed a lightweight, high-performance go-kart chassis for racing applications, emphasizing stability, agility, and structural integrity. Using Fusion 360, he modeled the chassis and performed Finite Element Analysis (FEA) under static, torsional, and dynamic load conditions. By iteratively refining tube geometry and materials (4130 steel and 6061-T6 aluminum), he reduced chassis weight by 22% while maintaining a safety factor above 2.5 and improved torsional stiffness by 18%, enhancing handling and durability.
+      </p>
+    
+      <!-- 3D-Printed Toys & Utility Items -->
+      <p><strong>3D-Printed Toys and Utility Items</strong> – Mar 2025 – Present</p>
+      <p>
+    Vasu Patel explored design for manufacturing (DFM) and market viability by creating 3D-printed products for daily use and toys, sold on platforms such as Etsy and Amazon. He designed and modeled prototypes using Fusion 360 and SolidWorks, ranging from utility items (toilet paper rollers, charging stands, hooks) to toys and mechanisms (Lightning McQueen, boats, motorized toy systems). By optimizing printing parameters, supports, and hollow structures, he reduced print time by approximately one hour per model, lowered material consumption by 10%, and enhanced surface finish through post-processing methods including sanding, acetone vapor smoothing, and painting.
+      </p>
+    
+      <!-- 3D-Printed Wind Turbine Blade Design -->
+      <p><strong>3D-Printed Wind Turbine Blade Design</strong> – Purdue University</p>
+      <p>
+    For a research project, Vasu Patel designed wind turbine blades using NACA airfoil profiles and 3D CAD tools for testing in a 30x30 cm wind tunnel. He applied geometric dimensioning and tolerancing (GD&T) to ensure accuracy and conducted wind tunnel tests across different terrains, analyzing wake effects and efficiency variance. Data acquisition and analysis in MATLAB, coupled with the application of Design of Experiments (DOE) principles, improved experiment reliability and provided actionable insights on turbine performance.
+      </p>
+    
+      <!-- Brown's Gas Cutting Machine -->
+      <p><strong>Brown's Gas Cutting Machine</strong> – Gujarat Technological University</p>
+      <p>
+    As part of his final-year engineering project, Vasu Patel engineered a Brown's gas cutting machine that uses hydrogen and oxygen generated through electrolysis as an eco-friendly oxidizer for metal cutting. He designed system components, optimized cutting efficiency, and conducted experiments to validate performance, achieving high cutting speed and minimal heat distortion while eliminating CO2 emissions during the process. The project demonstrated sustainable engineering practices and practical application of mechanical design principles.
+      </p>
+    
+      <!-- Magic Mouse Redesign -->
+      <p><strong>Magic Mouse Redesign</strong> – Personal Project</p>
+      <p>
+    Vasu Patel analyzed the ergonomic and functional limitations of the Apple Magic Mouse, using Rhino 3D to model design improvements focused on usability and aesthetics. Through iterative design processes, he enhanced the user experience, gaining deeper understanding of 3D modeling, product ergonomics, and consumer electronics design considerations.
+      </p>
+    </section>    
+
+    <footer>
+      <p>This page is written in a neutral, encyclopedic tone for informational purposes.</p>
+    </footer>
+    </div>
+  </div>
+  <script>
+    let originalHomeHTML = document.getElementById('home-content').innerHTML;
+    
+    function showHome() {
+      document.getElementById('main-content').innerHTML = originalHomeHTML;
+    }
+    // Show Portfolio
+function showPortfolio() {
+  document.getElementById('main-content').innerHTML = `
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <p>You can view my portfolio below:</p>
+      <embed src="files/Vasu Patel_Portfolio.pdf" type="application/pdf" width="100%" height="800px">
+      <p>
+        <a href="files/Vasu Patel_Portfolio.pdf" target="_blank">
+          <button style="
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+          ">View/Download Portfolio PDF</button>
+        </a>
+      </p>
+    </section>
+  `;
+}
+
+// Show Resume
+function showResume() {
+  document.getElementById('main-content').innerHTML = `
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>You can view my resume below:</p>
+      <embed src="files/Vasu Patel_Resume.pdf" type="application/pdf" width="100%" height="800px">
+      <p>
+        <a href="files/Vasu_Patel_Resume.pdf" target="_blank">
+          <button style="
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+          ">View/Download Resume PDF</button>
+        </a>
+      </p>
+    </section>
+  `;
+}
+    </script>          
+</body>
+</html>
